@@ -8,11 +8,11 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by Gilmar on 19/07/2016.
  */
 public class BDHelper extends SQLiteOpenHelper {
-    private static final String DB_NOME = meubanco;
-    private static final int BD_VERSAO = 1;
+    private static final String DB_NOME = "meubanco";
+    private static final int BD_VERSION = 1;
 
     public BDHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, DB_NOME, null, BD_VERSAO);
+        super(context, DB_NOME, null, BD_VERSION);
     }
 
     @Override
